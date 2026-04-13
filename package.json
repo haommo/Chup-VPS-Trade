@@ -1,0 +1,19 @@
+{
+  "name": "chup-vps-trade",
+  "version": "1.0.0",
+  "description": "Telegram bot chụp và gửi screenshot màn hình Windows VPS",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop chup-vps-trade",
+    "pm2:restart": "pm2 restart chup-vps-trade",
+    "pm2:logs": "pm2 logs chup-vps-trade",
+    "pm2:status": "pm2 status"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "grammy": "^1.35.0",
+    "screenshot-desktop": "^1.15.0"
+  }
+}
